@@ -1,3 +1,3 @@
 bricks:
-  getx:
-    path: bricks/state_management/getx/
+  config:
+    path: bricks/app_utils/config/

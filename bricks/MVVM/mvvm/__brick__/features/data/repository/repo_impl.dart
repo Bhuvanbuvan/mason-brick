@@ -1,14 +1,17 @@
-import 'package:fpdart/src/either.dart';
-import 'package:wcart_vendor/config/core/error/failure.dart';
-import 'package:wcart_vendor/features/domain/repository/repository.dart';
-import 'package:wcart_vendor/model/home_model.dart';
+import 'package:fpdart/fpdart.dart';
+
 
 class RepoImpl implements Repository{
+  final RemoteDataSource remoteDatastore;
+
+  RepoImpl(this.remoteDatastore);
   @override
-  Future<Either<Failure, VendorModel>> getHomePageData() {
-    // TODO: implement getHomePageData
-    throw UnimplementedError();
+  Future<Either<Failure, VendorModel>> getHomePageData() async {
+    try {
+      final VendorModel homePageData = await remoteDatastore.getHomePageData();
+      return Right(homePageData);
+    } on ServerException catch (e) {
+      return left(Failure(e.message.toString()));
+    }
   }
-
-
 }

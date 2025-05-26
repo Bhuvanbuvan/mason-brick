@@ -1,3 +1,5 @@
 bricks:
   config:
     path: bricks/app_utils/config/
+  mvvm: 
+    path: bricks/MVVM/mvvm/

@@ -1,4 +1,4 @@
-# config
+# mvvm
 
 [![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)](https://github.com/felangel/mason)
 
@@ -25,29 +25,3 @@ A few resources to get you started if this is your first brick template:
 [5]: https://youtu.be/qjA0JFiPMnQ
 [6]: https://youtu.be/o8B1EfcUisw
 [7]: https://youtu.be/LXhgiF5HiQg
-
-
-
-
-//step 1: to install mason on local machine:
---> dart pub global activate mason_cli
-check version --> (mason --version)
-
-setup 2: to create an new folder for mason bricks project
---> mason init
-
-step 3: to create an brick structured for /mason-bricks/bricks/state_management/
-
-step 4: after create the two folder to insert the folder on terminal to run the cmd --> [mason new getx]
-
-step 5:to setup the brick stucture 
-
-step 6: to create an path for getx 
-      getx:
-    path: bricks/state_management/getx/
-
-step 7: after set the path to run the cmd: --> [mason get]
-
-setp 8: to list the brick at global --> [mason add -g getx --path bricks/state_management/getx]
-
-setp 9: [mason list -g]

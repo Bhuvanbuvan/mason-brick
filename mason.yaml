@@ -3,3 +3,5 @@ bricks:
     path: bricks/app_utils/config/
   mvvm: 
     path: bricks/MVVM/mvvm/
+  usecase:
+    path: bricks/usecase/usecase/
